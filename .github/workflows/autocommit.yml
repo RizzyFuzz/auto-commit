@@ -13,7 +13,7 @@ jobs:
   auto_commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2      
+      - uses: actions/checkout@v3
         with:
          persist-credentials: false
          fetch-depth: 0
@@ -25,6 +25,7 @@ jobs:
           
       - name: Commit changes
         run: |
+          git config --global --add safe.directory /github/workspace
           git config --local user.email "rizzowohq@gmail.com"
           git config --local user.name "rizzlydev"
           git add -A
