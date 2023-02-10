@@ -1,4 +1,4 @@
-name: Auto commit
+name: Auto Commit
 
 on:
 
@@ -25,11 +25,11 @@ jobs:
           
       - name: Commit changes
         run: |
-          git config --local user.email "dev@azyansah.tech"
-          git config --local user.name "azyansah"
+          git config --local user.email "rizzowohq@gmail.com"
+          git config --local user.name "rizzlydev"
           git add -A
           
-          arr[0]="(bot): 😂 auto commit"
+          arr[0]="(bot): 😂 Auto Commit"
           arr[1]="(bot): 😱 auto commit"
           arr[2]="(bot): 👿 auto commit"
           arr[3]="(bot): 💩 auto commit"
